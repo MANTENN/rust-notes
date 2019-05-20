@@ -6,7 +6,7 @@
 
 // Nested Modules
 mod sound {
-    mod instrument {
+    pub mod instrument {
         mod woodwind {
             fn clarinet() {
 
