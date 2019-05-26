@@ -1,12 +1,12 @@
-// mod sound {
-//     fn guitar() {
-        
-//     }
-// }
-
-// Nested Modules
 mod sound {
+    // fn guitar() {
+
+    // }
+    // Nested modules
     pub mod instrument {
+        pub fn clarinet() {
+
+        }
         mod woodwind {
             fn clarinet() {
 
@@ -20,5 +20,7 @@ mod sound {
 
 
 fn main() {
-    println!("Hello, world!");
+    // Abs path
+    crate::sound::instrument::clarinet();
+    sound::instrument::clarinet();
 }
